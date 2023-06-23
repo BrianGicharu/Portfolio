@@ -22,12 +22,12 @@ nav>* {
     flex-direction: right;
 }
 
-.nav-buttons>li>a{
+.nav-buttons>li>button>a {
     color: lightblue;
     text-decoration: none;
 }
 
-.nav-buttons>li, .nav-buttons>li>a {
+.nav-buttons>li, .nav-buttons>li>button>a, .nav-buttons>li>button {
     list-style: none;
     margin: 5px;
     padding: 4px;
@@ -35,6 +35,11 @@ nav>* {
     border-top-left-radius: 8px;
     border-bottom-right-radius: 8px;
     transition: transform 0.3s ease;
+}
+
+.nav-buttons>li>button {
+    border: 0px transparent;
+    background-color: transparent;
 }
 
 .nav-buttons>li:hover, .nav-buttons>li>a:hover {
@@ -96,7 +101,9 @@ footer>div {
 
 /* modals */
 
-.education, .experience{
+.education, .experience {
     width: 50%;
+    margin-right: 25%;
+    margin-left: 25%;
     background-color: #ccc;
 }
